@@ -3,7 +3,12 @@
 <p class="button"> <%= link_to "Edit task", edit_path(@task) %></p>
 </div>
 <p> <%= @task.details %> </p>
-<p> <%= @task.completed %> </p>
-<div> <i class="far fa-square"> Completed</i> </div>
+<div> 
+<% if @task.completed == true %>
+  <i class="far fa-check-square"> Completed</i>
+<% else %>
+   <i class="far fa-square"> Completed</i>
+<% end %>
+ </div>
 
 <%= link_to "Back to task", tasks_path(@task) %>
