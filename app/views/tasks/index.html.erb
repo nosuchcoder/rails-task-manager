@@ -1,0 +1,15 @@
+<h1> To do list </h1>
+
+<ul>
+<% @tasks.each do |task| %>
+<li> <i class="far fa-check-square"></i> <%= link_to task.title, task_path(task) %>
+ <%= link_to task_path(task), method: :delete, data: { confirm: "Are you sure?" } do %>
+  <i class="far fa-trash-alt"></i>
+<% end %>
+       </li>
+<% end %>
+</ul>
+
+
+<a class="link_back" href="/tasks/new">Create a new task</a>
+

@@ -1,0 +1,65 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+a:visited {
+  display: none;
+}
+
+// Removing Bullet points
+ul {
+list-style-type: none;
+}
+
+a {text-decoration: none;}
+
+i { margin: 0 5px;}
+
+div {
+  margin: 1rem;
+}
+
+// Form design
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+
+form input {
+  margin: 1rem 0;
+}
+
+form input[type=text] {
+  padding: 1rem;
+}
+
+form input[type=submit] {
+  width: 80px;
+}
+
+.link_back {
+  color: orangered;
+  margin: 1rem; 
+}
+
+.button-box {
+  position: absolute;
+  top: 30px;
+  left: 1050px;
+}
+
+.button {
+  padding: 9px 14px;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  border: solid grey 1px;
+  width :80px;
+  background-color: palegreen;
+}
+
+.button:visited{
+  color: white;
+}
