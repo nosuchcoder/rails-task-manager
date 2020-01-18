@@ -6,12 +6,26 @@ a:visited {
   display: none;
 }
 
+h1 {
+  margin-left: 20px;
+}
+
 // Removing Bullet points
 ul {
 list-style-type: none;
+padding-bottom: 1rem;
+border-bottom: grey solid 1px;
 }
 
-a {text-decoration: none;}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: grey;
+}
 
 i { margin: 0 5px;}
 
@@ -40,8 +54,14 @@ form input[type=submit] {
 }
 
 .link_back {
-  color: orangered;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black;
   margin: 1rem; 
+}
+
+.link_back:hover {
+  color: grey
 }
 
 .button-box {
