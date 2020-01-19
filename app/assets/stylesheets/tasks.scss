@@ -2,9 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-a:visited {
-  display: none;
-}
+
 
 h1 {
   margin-left: 20px;
@@ -18,9 +16,15 @@ border-bottom: grey solid 1px;
 }
 
 
+
 a {
+  font-size: 18px;
   text-decoration: none;
   color: black;
+}
+
+a:visited {
+  display: none;
 }
 
 a:hover {
@@ -28,6 +32,10 @@ a:hover {
 }
 
 i { margin: 0 5px;}
+
+i:hover {
+  color: red;
+}
 
 div {
   margin: 1rem;
@@ -74,12 +82,15 @@ form input[type=submit] {
   padding: 9px 14px;
   text-align: center;
   border-radius: 5px;
-  color: white;
   border: solid grey 1px;
   width :80px;
-  background-color: palegreen;
+  background-color: #44bd32;
 }
 
 .button:visited{
   color: white;
+}
+
+.center{
+  line-height: 30px;
 }
